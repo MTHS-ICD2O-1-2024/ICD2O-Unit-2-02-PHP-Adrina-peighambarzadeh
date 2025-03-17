@@ -22,28 +22,29 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">The math program, in PHP</span>
+        <span class="mdl-layout-title">The Area and Perimeter program,in PHP</span>
       </div>
-      <main class="mdl-layout__content">
-        <div class="right-image">
-          <img src="./images/area_and_perimeter.png" alt="laptop image">
-        </div>
+    </header>
+    <div>
+      <header>The dimensions of a rectangle are: 5cm and 3cm.</header>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="right-image">
+        <img src="./images/area_and_perimeter.png" alt="area and perimeter image" />
+      </div>
+      <div class="page-content">The area and perimeter is ...</div>
+      <br />
+      <!-- Simple Textfield for integers-->
+      <form action="answer.php" method="GET">
         <br />
-        <!-- basic text -->
-        <div id="multiply-math">
-          <p>The area is:
-          <p>
-        </div>
-        <div id="perimeter math">
-          <p>The perimeter is:
-          <p>
-        </div>
-        <!-- Raised button with ripple -->
-        <button class="mdl-button mdl-PHP-button mdl-button--raised mdl-PHP-ripple-effect mdl-button--accent"
-          onclick="doMathClicked()" type="button">
-          Do math
+        <!-- Accent-colored raised button with ripple -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          type="submit">
+          Calculate
         </button>
-      </main>
+      </form>
+    </main>
   </div>
 </body>
 
