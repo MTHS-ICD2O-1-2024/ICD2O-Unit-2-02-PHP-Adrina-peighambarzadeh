@@ -24,20 +24,26 @@
       <div class="mdl-layout__header-row">
         <span class="mdl-layout-title">The math program, in PHP</span>
       </div>
-    </header>
-    <main class="mdl-layout__content">
-      <div class="right-image">
-        <img src="./images/notebook-animation.svg" alt="laptop image" />
-      </div>
-      <div class="page-content-php">
-        <?php echo '<p>6 + 5 = ' . (6 + 5) . '</p>'; ?>
-        <?php echo '<p>7 - 3 =  ' . (7 - 3) . '</p>'; ?>
-        <?php echo '<p>3 + 4 × 2 = ' . (3 + 4 * 2) . '</p>'; ?>
-        <?php echo '<p>(4 ÷ 2) + 3 = ' . (4 / 2 + 3) . '</p>'; ?>
-        <?php echo '<p>5 + 2³ = ' . (5 + 2 ** 3) . '</p>'; ?>
-      </div>
-      <br />
-    </main>
+      <main class="mdl-layout__content">
+        <div class="right-image">
+          <img src="./images/area_and_perimeter.png" alt="laptop image">
+        </div>
+        <br />
+        <!-- basic text -->
+        <div id="multiply-math">
+          <p>The area is:
+          <p>
+        </div>
+        <div id="perimeter math">
+          <p>The perimeter is:
+          <p>
+        </div>
+        <!-- Raised button with ripple -->
+        <button class="mdl-button mdl-PHP-button mdl-button--raised mdl-PHP-ripple-effect mdl-button--accent"
+          onclick="doMathClicked()" type="button">
+          Do math
+        </button>
+      </main>
   </div>
 </body>
 
